@@ -9,5 +9,5 @@ var z = x + y;*/
 const x = 5;
 const y = 6; 
 let z = x*y;
+console.log(z);
 alert(z);
-confirm(z);
