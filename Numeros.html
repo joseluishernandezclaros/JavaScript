@@ -3,17 +3,19 @@
   <body>
     <script>
       let a = 2;
-      let b = new Number(1);
+      let b = new Number(1); //objeto numero
       let c = 7.19;
       let d = "5.6";
 
       console.log(typeof c, typeof d);
       console.log(a, b);
       console.log(c.toFixed(5));
-      console.log(parseInt(c));
-      console.log(parseFloat(c));
+      console.log(parseInt(c)); 
+      console.log(parseFloat(c)); 
       console.log(a + b);
-      console.log(c + parseInt(d));
-    </script>
+      console.log(c + parseInt(d)); //casteo de d de texto a int
+      console.log(c + parseFloat(d)); //casteo de d de texto a float
+      
+   </script>
   </body>
 </html>
