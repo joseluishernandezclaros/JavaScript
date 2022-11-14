@@ -86,7 +86,38 @@ document.write(frase); */
 frasefinal = `soy ${frase1} y estoy caminando`; //backtig con alt 96
 document.write(frasefinal); */
 
+/* let numero = 12;
+let numero2 = 12;
+document.write(numero == numero2); */
 
+/* let numero = 12;
+let numero2 = 12;
+document.write(numero != numero2); //verificar si son distintos */
 
+/* 
+let numero = 12;
+let numero2 = "12";
+document.write(numero === numero2);//=== estrictamente iguales, mismo valor mismo tipo de dato */
 
+// let valor = true;
+// let valor2 = true;
+// let resultado = valor && valor2;
+// let resultado2 = valor || valor2;
+// let resultado3 = valor = !valor2;
 
+// n1=222;
+// n2=23;
+// af1=n1>n2;
+// af2=n1==n2;    
+// document.writeln(af1 && af2);
+// document.writeln(af1 || af2); //con que una sea verdadera dara verdadero
+
+//true && false = con que uno sea falso todo es falso
+
+//(true && false) || (true ||false)
+//false || true
+//true // respuesta final
+
+//canel case
+// valorEntero;
+// holaQuePexEnano;
