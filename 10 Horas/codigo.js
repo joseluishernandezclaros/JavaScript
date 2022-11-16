@@ -121,3 +121,5 @@ document.write(numero === numero2);//=== estrictamente iguales, mismo valor mism
 //canel case
 // valorEntero;
 // holaQuePexEnano;
+
+
