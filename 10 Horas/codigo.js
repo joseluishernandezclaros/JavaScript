@@ -108,7 +108,7 @@ document.write(numero === numero2);//=== estrictamente iguales, mismo valor mism
 // n1=222;
 // n2=23;
 // af1=n1>n2;
-// af2=n1==n2;    
+// af2=n1==n2;
 // document.writeln(af1 && af2);
 // document.writeln(af1 || af2); //con que una sea verdadera dara verdadero
 
@@ -122,4 +122,21 @@ document.write(numero === numero2);//=== estrictamente iguales, mismo valor mism
 // valorEntero;
 // holaQuePexEnano;
 
+// {
+//     document.write("hola");
+// }
+
+// nombre = "pedra";
+
+// if (nombre == "pedro") {
+//   document.writeln("hola "+nombre);
+// }
+
+// else if(nombre == "hola"){
+//     document.writeln("hola "+nombre);
+// }
+
+// else{
+//     document.writeln("Tu tienes otros nombre");
+// }
 
