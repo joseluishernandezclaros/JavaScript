@@ -14,10 +14,10 @@ let procesador = pc["procesador"];
 let ram = pc["ram"];
 let almacenamiento = pc["almacenamiento"];
 
-let frase = `El nombre de el pc es: ${nombre} <br>
-el procesador es: ${procesador} <br>
-el almacenamiento es: ${almacenamiento} <br>
-la memoria ram es de: ${ram}`; //baktick alt + 96
+let frase = `El nombre de el pc es: <b>${nombre}</b> <br>
+el procesador es: <b>${procesador}</b> <br>
+el almacenamiento es: <b>${almacenamiento}</b> <br>
+la memoria ram es de: <b>${ram}</b>`; //baktick alt + 96
 
 document.write(frase);
 
