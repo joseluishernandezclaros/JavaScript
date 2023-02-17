@@ -142,4 +142,108 @@ document.write(numero === numero2);//=== estrictamente iguales, mismo valor mism
 
 // -----------------------------------------------
 
+// let espacioLibre = false;
+
+// const validarCliente = (time)=>{
+//     let edad = prompt("¿Cual es tu edad?");
+//     if(edad >= 18){
+//         if(time >= 2 && time < 7 && espacioLibre == false){
+//             alert("Puedes pasar gratis por que eres la primera persona despues de las 2 am");
+//          espacioLibre = true;
+//         }else{
+//             alert(`son ${time}:00Hs y puedes pasar pero debes pagar la entrada`)
+//         }
+//     }else{
+//         alert("Eres menor de edad no puedes pasar");
+//     }
+// }
+
+// validarCliente(23);
+// validarCliente(24);
+// validarCliente(01);
+// validarCliente(01);
+// validarCliente(01);
+// validarCliente(02);
+// validarCliente(02);
+
+// -------------------------------------------
+
+// let cantidad = prompt("Cuantos alumnos son?");
+// let alumnosTotales = [];
+
+// for (let i = 0; i < cantidad; i++) {
+//   alumnosTotales[i] = [prompt("Nombre del alumno " + (i + 1)), 0];
+// }
+
+// const tomarAsistencia = (nombre, p) => {
+//   let presencia = prompt(nombre);
+//   if (presencia == "p" || presencia == "P") {
+//     alumnosTotales[p][1]++;
+//   }
+// };
+
+// for (i = 0; i < 30; i++) {
+//     for(alumno in alumnosTotales){
+//         tomarAsistencia(alumnosTotales[alumno][0],alumno);
+//     }
+// }
+
+// for(alumno in alumnosTotales) {
+//     let resultado = `${alumnosTotales[alumno][0]}:<br>
+//          Asistencias: ${alumnosTotales[alumno][1]}<br>
+//          Ausencias: ${30 - parseInt(alumnosTotales[alumno][1])}`;
+//          if(30 - alumnosTotales[alumno][1] > 18 ){
+//             resultado += "<b style='color:red'> Reprobado por inasistencias<br><br>";
+//          }else{
+//             resultado += "<br><br>";
+//          }
+//          document.write(resultado);
+// }
+
+
+
+// -------------------------------------
+// Calculadora
+
+
+// const sumar = (n1,n2) => {
+//     return parseInt(n1) + parseInt(n2);
+// }
+// const restar = (n1,n2) => {
+//     return parseInt(n1) - parseInt(n2);
+// }
+// const multiplicar = (n1,n2) => {
+//     return parseInt(n1) * parseInt(n2);
+// }
+// const dividir = (n1,n2) => {
+//     return parseInt(n1) / parseInt(n2);
+// }
+
+// alert("¿Que operacion deseas realizar?");
+// operacion = prompt("1: Sumar, 2:Restar, 3:Multiplicar, 4:Dividir");
+
+// if(operacion == 1){
+//     let numero1 = prompt("Digite el primer numero");
+//     let numero2 = prompt("Digite el segundo numero");
+//     resultado = sumar(numero1,numero2);
+//     alert(`Tu resultado es ${resultado}`);
+// }else if(operacion == 2){
+//     let numero1 = prompt("Digite el primer numero");
+//     let numero2 = prompt("Digite el segundo numero");
+//     resultado = restar(numero1,numero2);
+//     alert(`Tu resultado es ${resultado}`);
+// }else if(operacion == 3){
+//     let numero1 = prompt("Digite el primer numero");
+//     let numero2 = prompt("Digite el segundo numero");
+//     resultado = multiplicar(numero1,numero2);
+//     alert(`Tu resultado es ${resultado}`);
+// }else if(operacion == 4){
+//     let numero1 = prompt("Digite el primer numero");
+//     let numero2 = prompt("Digite el segundo numero");
+//     resultado = dividir(numero1,numero2);
+//     alert(`Tu resultado es ${resultado}`);
+// }else{
+//     alert("No se ha encontrado la operación");
+// }
+
 
