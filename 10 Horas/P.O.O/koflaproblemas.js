@@ -41,7 +41,7 @@ class celulares{
 }
 
 
-class celularAltaGama{
+class celularAltaGama extends celulares{
     constructor(color,peso,tamaño,rdc,ram,rdce){
         super(color,peso,tamaño,rdc,ram);
         this.resolucionDeCamaraExtra = rdce;
@@ -53,7 +53,7 @@ class celularAltaGama{
         alert("vamos a inicar un reconociemitneo facial");
     }
     mostrarInfoAltaGama(){
-        retunr this.mostrarInfo + `Resolucion de camara extra: ${this.resolucionDeCamaraExtra} `
+        return this.mostrarInfo() + `Resolucion de camara extra: ${this.resolucionDeCamaraExtra}`;
     }
 }
 
@@ -67,13 +67,19 @@ class celularAltaGama{
 // cel1.reiniciar();
 // cel1.presinarBotonEncendido();
 
-cel1 = celularAltaGama("rojo","130 gramos","5.2","4k","8GB","Full HD");
-cel2 = celularAltaGama("negro","120 gramos","5.2","4k","6GB","Full HD");
+cel1 = new celularAltaGama("rojo","130 gramos","5.2","4k","8GB","Full HD");
+cel2 = new celularAltaGama("negro","120 gramos","5.2","4k","6GB","Full HD");
+
+// document.write(`
+//     ${cel1.mostrarInfo()}<br><br>
+//     ${cel2.mostrarInfo()}<br><br>
+//     ${cel3.mostrarInfo()}<br>
+// `);
+
 
 document.write(`
-    ${cel1.mostrarInfo()}<br>
-    ${cel2.mostrarInfo()}<br>
-    ${cel3.mostrarInfo()}<br>
+    ${cel1.mostrarInfoAltaGama()}<br><br>
+    ${cel2.mostrarInfoAltaGama()}<br>
 `);
 
 
