@@ -28,13 +28,31 @@ class celulares{
     }
     grabarVideo(){
         alert(`grandando video en una resolucion de : ${this.rdc}`);
-    }           
+    }    
+    mostrarInfo(){
+        return `
+        Color: <b>${this.color}</b><br>
+        Peso: <b>${this.peso}</b><br>
+        Resolución De Pantalla: <b>${this.rdp}</b><br>
+        Resoluci´n De Camara: <b>${this.rdc}</b><br>
+        Memoria Ram: <b>${this.ram}</b><br>
+        `
+    }       
 }
 
-cel1 = new celulares("rojo","150 gramos","5 pulgadas","2GB");
+cel1 = new celulares("rojo","150 gramos","5 pulgadas","Full HD","2GB");
+cel2 = new celulares("negro","250 gramos","4 pulgadas","Full HD","4GB");
+cel3 = new celulares("blanco","50 gramos","5 pulgadas","Full HD","8GB");
 
-cel1.presinarBotonEncendido();
-cel1.tomarFoto(); 
-cel1.grabarVideo();
-cel1.reiniciar();
-cel1.presinarBotonEncendido();
+// cel1.presinarBotonEncendido();
+// cel1.tomarFoto(); 
+// cel1.grabarVideo();
+// cel1.reiniciar();
+// cel1.presinarBotonEncendido();
+
+document.write(`
+    ${cel1.mostrarInfo()}<br>
+    ${cel2.mostrarInfo()}<br>
+    ${cel3.mostrarInfo()}<br>
+`);
+
