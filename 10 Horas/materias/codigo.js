@@ -26,13 +26,15 @@ if(info!=false){
 
 const cantidadClases = (alumno) =>{
     let cantidadTotal = 0;
+    let clasesPresentes = [];
     let info = obtenerInfo();
     for(infor in info){
         if(info[infor].includes(alumno)){
             cantidadTotal++;
+            clasesPresentes.push(" "+infor);
         }
     }
-    return `El alumno ${alumno} es en: ${cantidadTotal} clases`;
+    return `El alumno ${alumno} esta en: ${cantidadTotal} clases:  <b style='color:green'>${clasesPresentes}</b><br>`;
 }
 
 // obtenerInfo("fisica");
@@ -45,4 +47,9 @@ mostrarInfo("quimica");
 mostrarInfo("programacion");
 mostrarInfo("logica");
 
-document.write(cantidadClases("cofla"));
+document.writeln(cantidadClases("cofla"));
+document.writeln(cantidadClases("maria"));
+document.writeln(cantidadClases("pedro"));
+document.writeln(cantidadClases("juan"));
+
+
