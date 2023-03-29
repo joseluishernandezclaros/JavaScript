@@ -52,4 +52,3 @@ document.writeln(cantidadClases("maria"));
 document.writeln(cantidadClases("pedro"));
 document.writeln(cantidadClases("juan"));
 
-
